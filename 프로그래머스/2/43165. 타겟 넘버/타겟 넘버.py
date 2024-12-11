@@ -17,8 +17,6 @@ def solution(numbers, target):
             tmp.append(parent-num)
         leaves = tmp
     
-    for i in leaves:
-        if i == target:
-            answer = answer+1
+    answer = leaves.count(target)
     
     return answer
